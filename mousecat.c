@@ -19,7 +19,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 			Sleep(5);
 		}
 		UnhookWindowsHookEx(hook);
-		hook = SetWindowsHookEx(WH_MOUSE_LL, kbhcallback, GetModuleHandle(0), 0);
+		hook = SetWindowsHookEx(WH_MOUSE_LL, mouse_event_callback, GetModuleHandle(0), 0);
 	}
 	return 0;
 }
