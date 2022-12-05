@@ -1,3 +1,3 @@
 @echo off
-gcc mousecat.c -s -Wl,-subsystem,windows -static -s -o mousecat
+gcc mousecat.c -Wl,-subsystem,windows -s -o mousecat
 pause
